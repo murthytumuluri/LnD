@@ -1,13 +1,8 @@
-<project name="Sample usage of Salesforce Ant tasks" basedir="." xmlns:sf="antlib:com.salesforce">
+<project name="Sample usage of Salesforce Ant tasks" xmlns:sf="antlib:com.salesforce">
 
     <property file="build.properties"/>
     <property environment="env"/>
 
-    <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
-        <classpath>
-            <pathelement location="../ant-salesforce.jar" />
-        </classpath>
-    </taskdef>
 
     <!-- Test out deploy and retrieve verbs for package 'mypkg' -->
     <target name="test">
